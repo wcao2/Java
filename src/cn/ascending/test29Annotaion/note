@@ -1,0 +1,24 @@
+注释:用文字描述程序的 给程序员看的
+注解: 说明程序的 给计算机看的
+
+JDK(after JDK1.5)一些预定义的注解 他可以声明在包,类,方法,局部变量,方法参数等前面
+@Override 检测被该注解标注过的方法是否继承自父类接口的
+@Deprecated 该注解标注的内容 表示已经过时
+@SupressWarnings 压制警告 一般参数是all
+
+自定义注解格式:
+格式: 元注解
+      public @interface 注解名称{}
+注解本质上就是一个接口 该接口默认继承Annotation接口
+
+属性:接口中可以定义的抽象方法
+1属性的返回值类型(基本数据类型4类八种,String,枚举,注解,以上类型的数组)
+2定义了属性 在需要时候需要给属性赋值(在定义属性时,使用default关键字给属性默认初始化值,则使用注解时候annonation时候,可以不进行属性的赋值)
+3如果只有一个属性需要赋值 并且属性的名称是value 则value可以省略 直接定义即可
+4数组赋值的时候 值使用{}包裹 如果数组中只有一个值 则{}可省略
+
+元注解(mata-annotation):用于描述注解的注解
+@Target:描述注解能够作用的位置 ElementType取值: TYPE:可以作用于类上 METHOD:可以作用于方法上 FIELD:可以作用于成员变量上
+@Retention:描述注解被保留的阶段   @Retention(RetentionPolicy.RUNTIME):当前被描述的注解 会保留到class字节码文件中 并被JVM读取到
+@Document:描述注解是否被抽取到api文档中
+@Inherited：描述注解是否被子类继承

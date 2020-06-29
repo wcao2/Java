@@ -1,0 +1,63 @@
+三个常见问题: how do you start a new Thread? How do you handle concurrency in your work? what is thread pool?
+
+并发Concurrent 两个或者多个事件在同一时间段内发生(Two or more events occurred within the same time period)， 交替执行 cpu switch is faster 一个人吃两个馒头
+并行Parallel 两个或者多个事件在同一时刻发生， 同时执行  (例如两个cpu来执行两个任务)   速度快 两个人吃两个馒头
+
+进程process: 是一个内存中运行的应用程序 电脑里面有很多个进程 进入到内存的程序 叫做进程
+应用程序都在硬盘存储(永久存储ROM) 双击应用程序 进入到内存中去执行(RAM临时存储) 关机 内存中全部数据清空 硬盘中的数据还存在 内存越大 执行速度越快
+
+线程thread: 是进程的执行单元 负责当前进程中程序的执行
+
+一个程序运行至少一个进程 一个进程可以包含多个线程(多线程程序)
+
+多核心cpu(例如4核心8线程cpu):点击功能(病毒查杀 清理垃圾 电脑加速) 执行就会开启3条应用程序到cpu执行路径 cpu就可以通过这个路径执行功能 这个路径叫做线程
+单核心单线程cpu:cpu在多个线程之间做高速切换 轮流执行多个线程 效率低下
+
+JVM 执行main方法, main方法会进入栈内存,jvm会找操作系统开辟一条main方法通向cpu的执行路径
+
+多线程好处
+1:效率高
+2:多个线程之间互不影响(becuase in different stack space)
+
+创建新的线程 1:继承thread,重写run方法; 然后创建一个实现类对象 并且调用start方法 就会启动多线程
+           2:a:实现runable接口的类 b:实现run方法 c:创建runnable接口实现类对象 d:创建Thread对象 e:构造方法中传递Runnable接口的实现类对象
+
+start() 方法则是 Thread 类的方法，用来异步启动一个线程，然后主线程立刻返回。
+该启动的线程不会马上运行，会放到等待队列中等待 CPU 调度，只有线程真正被 CPU 调度时才会调用 run() 方法执行。
+
+实现runnable好处:  305,308
+1:避免单继承局限性 继承Thread类就不能继承其它的类
+2:runnable接口方式把设置线程任务和开启新线程进行分离(解耦) 实现类中 重写run方法用来设置线程任务 ;创建Thread对象 调用start()方法 用来开启新线程
+
+三种方法解决:同步代码块 同步方法
+同步技术原理 使用一个锁对象 叫同步锁 又叫对象监视器 3个线程一起抢夺cpu执行权 谁抢到了 执行run方法 进行卖票
+t抢到了cpu执行权 执行run方法 遇到了synchronized代码块 这时候 t会检查同步代码块是否有锁对象 发现有 就会获取到锁对象 进入到同步中执行
+t1抢到了cpu execution right, 执行run方法，遇到synchronized代码块, t1 is going to check if the synchronized code has lock obj, if not, t1 goes to block status
+and is waiting t return the lock obj(t finish all the code in synchronized code).
+
+线程之间的状态:blocked, runnable, terminated,timed_waiting, waiting
+
+线程之间的通信:多个线程在处理同一个资源 但是处理的动作却不相同
+多个线程并发(并发Concurrent)执行时候 在默认情况下cpu随机切换线程的 当我们需要多个线程共同完成一个任务时候 并且希望他们是有规律的执行
+多个线程之间需要协调通信 来帮助我们多线程共同操作一份数据
+
+wait:线程不再参与活动 不再参与调度 进入wait set中 因此不会浪费cpu资源 也不会竞争锁了 此时线程状态是waiting 需要等待别的线程执行一个特别的动作 也就是notify
+     等待的线程从wait set中释放出来 重新进入调度队列(ready queue)中
+notify:选取所通知对象wait set中的一个线程释放
+notifyAll:释放所通知对象的wait set上的全部线程
+
+wait和notify方法必须由同一个锁对象调用 对应的锁对象可以通过notify唤醒使用同一个锁对象调用wait方法后的线程
+wait notify必须要在同步代码块或者同步函数中使用 必须通过锁对象调用这两个方法
+
+pool: it is like a container
+如果并发(Concurrent)线程数量很多 并每一个线程执行很短的时间就结束了 这样频繁创建线程就会大大降低系统的效率 因为创建销毁都需要时间
+所以我们想线程复用 执行完线程不被销毁 而继续执行其他任务
+
+线程池就是一个容器 当程序第一次启动的时候 创建多个线程 保存到一个集合中 当想要使用线程的时候 可以从集合中取出线程使用
+Thread t=list.remove() 返回被移除的元素 线程只能被一个任务使用
+Thread t1=linked.removeFirst();
+当使用完毕线程 需要把线程归还给线程池
+list.add(t);
+linked.addLast(t);//添加到末尾
+
+After JDK1.5 内置线程池 可以直接使用

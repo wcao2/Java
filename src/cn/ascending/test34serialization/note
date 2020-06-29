@@ -1,0 +1,21 @@
+Jackson 是 Spring Boot Built-in Json parsing framework，用来完成出入参的序列化和反序列化。
+通常，我们会在 Controller 类中方法上，加上 @RequestBody 或者 @ResponseBody 注解，Spring Boot 会自动对出入参做 Json 解析与转换工作。
+注意：@RequestBody 用于将入参 Json 转换成对象，而 @ResponseBody 用于将对象转换成 Json 返回。
+
+序列化是将memory 对象转换成字节流(stream of bytes)的过程，而反序列化的是将字节流(stream of bytes)恢复成memory对象的过程 deserialization
+网络传输也是serialization 因为我们要使用文本格式
+Json是文本格式 如果其中有任何一个对象无法转换成功 就会报错 could not to write JSON,failed to lazily...
+
+JsonIgnore:转化成json的时候给ignore,但是memory里面依旧有这个对象(不想从memory对象转换成json)
+
+之前是contentNegotiating把memory变成所需要的resource of representation
+Jackson 实际上是ViewResolver 返回给前台的是什么数据格式 json,pdf...
+Jackson helps me do serialization, key用的是variable name, value用的是variable的value, then convert to JSON type.
+
+Jackson.core
+  <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-json</artifactId>
+      <version>2.1.6.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>

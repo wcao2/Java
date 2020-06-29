@@ -1,0 +1,17 @@
+IO流主要用于读写 Stream流主要对集合，数组元素进行一些简化操作
+为什么使用循环 因为要进行遍历 但循环是遍历的唯一方式吗 遍历(目的)指的是将每一个元素逐一进行处理 而并不是从第一个到最后一个顺次处理的循环(方式)
+
+数据源:集合或者数组
+中间操作都会返回流本身(filter map skip),这样多个操作可以串联成为一个管道，如同流式风格(fluent style)
+
+https://www.geeksforgeeks.org/stream-in-java/
+常用方法:
+Intermediate Operations: map, filter, sorted, peek, limit, skip,concat, distinct  (return an another stream, they are not executed until a result of a processing is needed)
+Terminal Operations(reduce ,collect):reduce ,collect, max(), min()
+
+Stream属于管道流 只能被消费一次 第一个Stream流调用完毕方法 数据就会流转到下一个stream上 而这时候第一个stream流就已经使用完毕 所以第一个stream不能再调用方法
+
+what is STREAM in Java 8
+a stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result.
+A stream is not a data structure instead it it takes input from the Collections, Arrays or I/O channels.
+
