@@ -7,7 +7,7 @@ package cn.ascending.test34serialization;
 
 // de-serialization is rebuilding the object from stream of bytes.
 
-// For my project, jackson already done serialization; Person need to do implements Serializable(interface)
+// For my project, jackson already done serialization; In here, Person need to do implements Serializable(interface)
 
 import cn.ascending.utils.Person;
 

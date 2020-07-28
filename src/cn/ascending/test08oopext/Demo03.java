@@ -51,6 +51,8 @@ class Person{
         this.age = age;
     }
 
+    public Person(){}
+
     public void m1(){
         System.out.println("the name is "+name);
     }

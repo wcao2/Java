@@ -5,15 +5,18 @@
 
 Reflection(ryo) is a mechanism in a runtime to achieve class, field, constructor, method information from runtime instance.
 就是在runtime时候看class里面的属性
+
 比如在我项目里 某一个class并且上面有@Service, 对它的constructor调用，所以spring这个framework一定要用reflection的
 根据annotation能找到class
+
 当请求的时候 dispatcher到相应的url和httpMethod找出相应的方法,在controller 根据@RequestMapping做method.invoke()
 
 why use Ref:
-(when compile time, we don't know which method to use, so in runtime I use reflection, based on the parameter I get from the front, to decide which method I use)
+(when compile time, we cannot decide which method to use, so in runtime I use reflection,
+ based on the parameter I get from the front, to decide which method I use)
 
 how do we declare java annotation?
-1:java annotation is a interface, a little different it is an annotation interface
+1:java annotation is an interface, a little different it is an annotation interface
    it looks like an interface without any implementation. It just declare what kind of attributes this annotation would contain in future
 2: the way we retrieve those information is to use java reflect package, in java reflect package, we can retrieve the info as runtime
 

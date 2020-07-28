@@ -15,7 +15,7 @@ public class Demo11Prac {
         for (int i = chars.length-1; i >=0; i--) {
             System.out.print(chars[i]+" ");
             if(i==0){
-                System.out.println(chars[i]+" ");
+                System.out.print(chars[i]+" ");
             }
         }
 

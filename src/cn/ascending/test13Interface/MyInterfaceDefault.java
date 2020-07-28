@@ -4,11 +4,11 @@ package cn.ascending.test13Interface;
 //175
 
 /*
-* 1:java8　开始　接口里允许定义默认方法
+* 1:java8　开始　接口里允许定义 [默认方法]
 * 　public default 返回值类型　方法名称(参数列表){ 方法体 }
 *  默认方法　可以通过接口实现类对象直接调用 ; 也可以通过接口实现类进行覆盖重写
 *
-* 2: java8 开始，　接口中允许定义静态方法
+* 2: java8 开始，　接口中允许定义 [静态方法]
 * 　　public static 返回值类型　方法名称(参数列表){ 方法体}　把abstract, default换成static即可
  */
 public interface MyInterfaceDefault {
@@ -37,7 +37,10 @@ class Main implements MyInterfaceDefault{
     public void methodDefault(){
         System.out.println("实现类覆盖重写了接口的默认方法");
     }*/
-
+/*    @Override
+    public void methodDefault(){
+        System.out.println("实现类覆盖重写了接口的默认方法");
+    }*/
 
     public static void main(String[] args) {
         Main m=new Main();

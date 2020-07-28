@@ -35,8 +35,9 @@ public class Demo07MapTest {
         //5:
         for(Character key:map.keySet()){
             Integer value = map.get(key);
-            System.out.println(key+"===>"+value);
-
+            if(value==2){
+                System.out.println(key+"===>"+value);
+            }
         }
     }
 

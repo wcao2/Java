@@ -4,14 +4,14 @@ package cn.ascending.java8.lambda;
 
 //To use lambda expression, you need to either create your own functional interface or use the pre defined functional interface provided by Java.
 
-//functional interface:An interface with only single abstract method is called functional interface(or Single Abstract method interface)
+//functional interface:An interface with only one [abstract] method is called functional interface(or Single Abstract method interface)
 //for example: Runnable, callable, ActionListener etc.
 public class LambdaTry {
 
     //define a functional Interface
     @FunctionalInterface
-    interface MyFunctionInterface{
-        String myFunction(String str);
+    /*public abstract*/ interface MyFunctionInterface{
+        /*public abstract */String myFunction(String str);
     }
 
     //1.1

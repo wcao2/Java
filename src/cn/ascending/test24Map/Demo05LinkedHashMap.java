@@ -13,13 +13,13 @@ public class Demo05LinkedHashMap {
         map.put("c","c");
         map.put("b","b");
         map.put("a","A");
-        System.out.println(map);//no repeated(key), disorderly
+        System.out.println(map);//no repeated(key), disorderly  {a=A, b=b, c=c}
 
         LinkedHashMap<String,String> linked=new LinkedHashMap<>();
         linked.put("a","a");
         linked.put("c","c");
         linked.put("b","b");
         linked.put("a","A");
-        System.out.println(linked);//no repeated(key), orderly
+        System.out.println(linked);//no repeated(key), orderly   {a=A, c=c, b=b}
     }
 }

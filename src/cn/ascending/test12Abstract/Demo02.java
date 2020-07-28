@@ -11,7 +11,7 @@ public abstract class Demo02 {
 
 class Zi extends Demo02{
     public Zi(){
-        super();//默认调用
+        super();//子类构造方法 调用父类不带参数构造方法
         System.out.println("constructor method of son");
     }
 

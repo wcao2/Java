@@ -6,12 +6,12 @@ import java.util.regex.Pattern;
 public class RegularMatch01 {
     public static void main(String[] args) {
         //String pattern="a*b";//X*: X zero or more times
-        String pattern="a.b";//. any character between a and b
+        String pattern="a.b";//. any character(only once) between a and b
         //String pattern="a\\.b";//really point between a and b
         //String pattern="Ascending$";//end of Ascending
 
         //String pattern ="^Ascending-[a-zA-Z]+";//Ascending-开头 a-z or A-Z one or more time
-        //String pattern ="^Ascending-\\w+";//Ascending-开头 a-z or A-Z or number one or more time
+        //String pattern ="^Ascending-\\w+";//Ascending-开头 [a-z or A-Z or number] one or more time
         //String pattern ="^Ascending-\\w{1,10}";//Ascending-开头 a-z or A-Z or number, at least one time, not more than 10 times
         Pattern p=Pattern.compile(pattern);
         Matcher m=p.matcher("a2b    ");

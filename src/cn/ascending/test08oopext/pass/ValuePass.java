@@ -10,7 +10,7 @@ public class ValuePass {
         value=3*value;
         //System.out.println(value);
     }
-    //3:After the end of this method, the parameter variable "value" is no longer used and is gc.
+    //3:After finish this method, the parameter variable "value" is no longer used and is gc.
 
     public static void main(String[] args) {
         System.out.println("before call the method "+x);//10

@@ -16,8 +16,8 @@ public class  Body {
     //instance method
     public void method(){
         System.out.println("外部类方法");
-        /*Heart h=new Heart();
-        h.beat();*/
+        Heart h=new Heart();
+        h.beat();
         //Anonymous object(only use once) 调用内部类方法
         new Heart().beat();//外用内 需要内部类对象
     }

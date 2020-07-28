@@ -36,7 +36,7 @@ public class Demo195 {
 
 class Student{
     String name;
-    //对于instance variable 必须手动赋值(直接赋值 或 通过构造方法赋值) 二选一
+    //对于final修饰的instance variable 必须手动赋值(直接赋值 或 通过构造方法赋值) 二选一
     private final String school="GMU";
 
     public Student(String name) {

@@ -2,7 +2,7 @@ package cn.ascending.test16Innerclass.anoymous;
 
 @FunctionalInterface
 public interface MyInterface206 {
-    void method();//abstract method(omit public abstract)
+    /*public abstract*/ void method();
 
 }
 
@@ -15,7 +15,7 @@ class MyInterfaceImpl implements MyInterface206{
 
 /*
 *  匿名内部类定义格式: 接口名称 对象名=new 接口名称(){ ....覆盖所有抽象方法}
-*  如果接口的实现类 或者父类的子类只需要使用唯一的一次 这种情况下可以省略该类的定义 而改为使用匿名内部类
+*  如果接口的实现类 或者父类的子类只需要使用唯一的一次 这种情况下 可以 省略该类的定义 而改为使用匿名内部类
 * */
 
 /*
@@ -24,7 +24,7 @@ class MyInterfaceImpl implements MyInterface206{
 *  3:{...}这才是匿名内部类的内容
 *  注意:
 *  1: 匿名对象 在调用方法的时候 只能调用唯一一次 如果需要同一个对象调用多次方法 那么必须给对象起一个名字
-*  2: 匿名内部类是省略了(实现类/子类名称); 匿名对象是省略了对象名称
+*  2: 匿名内部类是省略了([实现类/子类名称]); 匿名对象是省略了对象名称
 * */
 class Main{
     public static void main(String[] args) {
@@ -40,7 +40,13 @@ class Main{
         };
         obj.method();
 
-        //使用匿名内部类 而且省略对象名称(匿名对象)
+       /* MyInterface206 m=()->{
+            System.out.println("123");
+        };
+        m.method();
+        m.method();*/
+
+        //使用匿名内部类 而且省略对象名称([匿名对象])
         new MyInterface206(){
             @Override
             public void method() {
@@ -48,9 +54,6 @@ class Main{
             }
         }.method();
 
-        /*MyInterface206 m=()->{
-            System.out.println("123");
-        };
-        m.method();*/
+
     }
 }

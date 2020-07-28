@@ -9,7 +9,7 @@ public class Member extends User {
     }
 
     public Member(String name, int money) {
-        //this(); this访问本类无参构造
+       // this(); //this访问本类无参构造
         super(name, money);//访问父类有参数构造方法
     }
 

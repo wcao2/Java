@@ -2,7 +2,6 @@ package cn.ascending.test06Array;
 
 public class Demo05 {
     public static void main(String[] args) {
-        //Dynamic initialization
         int[] array=new int[3];//dynamic initialization
         int[] arrayB={10,20,30};//static initialization
         System.out.println(arrayB.length);

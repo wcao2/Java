@@ -36,6 +36,6 @@ public class HashMapExt {
         hs.put(hme1,1);
         hs.put(hme2,2);
         hs.put(hme3,3);
-        System.out.println(hs);
+        System.out.println(hs);//{5=2, 6=3}
     }
 }

@@ -2,15 +2,15 @@ package cn.ascending.test14Poly.Demo02;
 
 
 /*
- *  在多态的代码中 成员方法的访问规则是 看new的是谁 就优先用谁 没有则向上找
+ *  在多态的代码中 [成员方法]的访问规则是 看new的是谁 就优先用谁 没有则向上找
  */
 public class Demo02 {
     public static void main(String[] args) {
         Fu obj=new Zi();//多态
-        System.out.println(obj.num);//这里优先父
+        System.out.println("Fu's instance variable is "+obj.num);//这里优先父
         obj.method();//new Zi() so 优先用Zi
         obj.methodFu();//子类没有父类有 用父
-        
+        //cannot use methodZi anymore
     }
 }
 

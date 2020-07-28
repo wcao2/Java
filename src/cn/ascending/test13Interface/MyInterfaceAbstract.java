@@ -12,7 +12,7 @@ package cn.ascending.test13Interface;
 *  notice: 如果实现类没有重写接口中所有抽象方法，这个实现类自己必须是抽象类
  */
 public interface MyInterfaceAbstract {
-    public abstract void methodAbs();
+    /*public abstract */void methodAbs();
 
 }
 

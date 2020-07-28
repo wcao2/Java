@@ -3,12 +3,12 @@ package cn.ascending.java8.interdefmtho;
 @FunctionalInterface
 public interface InterfaceTester {
     //default method can be override
-    public default void defMethod(){
-        System.out.println("this is a interface default method");
+    public default int defMethod(){
+        return 1;
     }
 
     public default void defMethod01(){
-        System.out.println("this is a interface default method2");
+        System.out.println("this is a interface default method01");
     }
 
     //static method

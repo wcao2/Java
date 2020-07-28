@@ -17,6 +17,7 @@ public class DateExample {
         System.out.println(LocalTime.now());//only time
         System.out.println(LocalDateTime.now());//data+time
 
+        System.out.println("=====================");
         //format the date
         LocalDateTime ldt=LocalDateTime.now();
         System.out.println("before formatting "+ldt);

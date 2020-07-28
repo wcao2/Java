@@ -18,6 +18,7 @@ public class Demo04EntrySet {
 
     private static void show02() {
         //key is person type
+        //in Treemap, 若Person作为key,则必须指定comparator
         HashMap<Person,String> map=new HashMap<Person,String>();
         map.put(new Person("Jonny",18),"BJ");
         map.put(new Person("Peter",28),"DC");
@@ -44,7 +45,7 @@ public class Demo04EntrySet {
         Map<String,String> m=new HashMap<>();
         for(Map.Entry es: m.entrySet()){
             Object a=es.getValue();
-            Object b=es.getValue();
+            Object b=es.getKey();
         }
     }
 

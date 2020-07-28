@@ -29,21 +29,19 @@ public class Demo01Map {
         map.put("A","a");
         map.put("B","b");
         map.put("C","b");
-        map.put("A","a");
-        System.out.println(map);
+        map.put("A","d");
+        System.out.println(map);// {A=a, B=b, C=b}
         //2:remove method 把指定键值对在Map集合中删除 返回被删除元素的值. k不存在 返回null
         Map<String,Integer> map1=new HashMap<>();
         map1.put("cw",183);
         Integer v1=map1.remove("cw");//多使用包装类 少用基本类型 因为可能返回null, 会有nullpointerexception
         System.out.println("v1: "+v1);
-        System.out.println(map1);
+        System.out.println(map1);// { }
         //3:通过key获取value 没有返回null
         String value=map.get("A");
         System.out.println(value);
         //4:是否包含key
         boolean bool = map.containsKey("A");
         System.out.println("bool: "+bool);
-        System.out.println("=====================================");
-
     }
 }

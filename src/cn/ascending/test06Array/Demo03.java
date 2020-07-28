@@ -33,6 +33,10 @@ public class Demo03 {
         System.out.println(arrayB[1]);//200
         System.out.println(arrayB[2]);//20
         System.out.println("=============");
+        System.out.println(arrayA);//address value
+        System.out.println(arrayA[0]);//100
+        System.out.println(arrayA[1]);//200
+        System.out.println(arrayA[2]);//20
     }
 
 }

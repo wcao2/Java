@@ -18,12 +18,9 @@ public class Demo01Intr {
                 System.out.print(array[i]+", ");
             }
         }
+
         System.out.println("=============");
-
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
-
-        //使用面向对象：和上面功能一样
+        //使用面向对象
         //find a class(Arrays) provided by JDK
         //toString method,
         System.out.println(Arrays.toString(array));

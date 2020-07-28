@@ -16,8 +16,5 @@ class Test{
     public static void main(String[] args) {
         StaticCodeBlock scb=new StaticCodeBlock();
         scb.method();
-        scb.method();
-        scb.method();
-
     }
 }

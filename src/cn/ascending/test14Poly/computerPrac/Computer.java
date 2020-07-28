@@ -11,7 +11,7 @@ public class Computer {
     //使用USB设备的方法 使用接口作为方法的参数
     public void useDevice(Usb usb){
         usb.open();
-        if(usb instanceof Mouse){//先判断
+        if(usb instanceof Mouse){//先判断   Animal a= new Dog();  a instanceof Dog
             Mouse m=(Mouse)usb;//向下转型
             m.click();
         }else if(usb instanceof Keyboard){

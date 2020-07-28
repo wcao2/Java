@@ -20,14 +20,14 @@ public abstract class Demo01Abs {
 //3:子类必须覆盖override抽象父类中所有的抽象方法(去掉abstract,补上方法体{})
 //4:创建子类对象　进行使用
 class Main extends Demo01Abs{
+    @Override
+    public void eat() {
+        System.out.println("override....");
+    }
+
     public static void main(String[] args) {
         Main m=new Main();
         m.eat();
         //m.method();
-    }
-
-    @Override
-    public void eat() {
-        System.out.println("override....");
     }
 }

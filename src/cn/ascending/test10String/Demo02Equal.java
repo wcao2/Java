@@ -1,6 +1,6 @@
 package cn.ascending.test10String;
 
-//==是进行对象地址值的比较.若确实需要字符串内容进行比较,
+//==是进行对象地址值的比较.若确实需要字符串内容进行比较,则
 // 1: public boolean equals(Objects obj) 参数可以是任何对象
 //   推荐把常亮字符串写到前面 “abc”.equals(str1); if str1 null, and str1.equals("abc"); ==>null pointer exception
 
@@ -16,7 +16,7 @@ public class Demo02Equal {
         System.out.println(str1.equals(str2));//true
         System.out.println(str1.equals(str3));//true
         System.out.println(str1.equals("Hello"));//true
-        System.out.println("Hello".equals("str1"));//true
+        System.out.println("Hello".equals(str1));//true
 
         String strA="Java";
         String strB="java";

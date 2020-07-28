@@ -34,7 +34,7 @@ class Main{
         //如何知道父类引用的对象 本来是什么子类？
         //对象 instanceof 类名称 结果是布尔值 判断前面的对象能不能当做后面对象实例(Determine whether the object in front can be used as an instance of the object behind)
         if(animal instanceof Cat){
-            //向下转型 进行还原动作 down casting
+            //向下转型 进行还原动作 down casting  in order to use the subclass's method
             //子类名称 对象名=(子类名称) 父类对象 =>将父类对象 还原成为本来的子类对象
             Cat cat=(Cat) animal;
             cat.catchMouse();

@@ -16,5 +16,6 @@ public class Demo02 {
         System.out.println("test...."+array1[2]);
         System.out.println("=====================");
         array[1]=123;
+
     }
 }

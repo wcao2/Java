@@ -22,7 +22,7 @@ class TestStatic{
     public static void main(String[] args) {
         StaticMethod sm=new StaticMethod();
         sm.m1();
-        //for static method, can use obj name to call the method or just use class name
+        //for static method, can use obj name to call the method or just use class name to call the method
         sm.m2Static();//not recommend( compile first convert it to StaticMethod.m2Static() )
         StaticMethod.m2Static();
         //just use method name to call the inner method

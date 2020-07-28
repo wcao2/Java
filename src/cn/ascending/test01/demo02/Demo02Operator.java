@@ -6,7 +6,7 @@ public class Demo02Operator {
         System.out.println(20+30);
         int a=5;int b=3;
         System.out.println(a/b);
-        //auto increment opertor
+        //auto increment operator
         //Use alone, ++a, a++ no diff
         //mix use, to use the result ++a, if a++, use original value of a, then ++
         //const can not use ++ --

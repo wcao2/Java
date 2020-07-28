@@ -33,7 +33,7 @@ public class test20System {
         int[] src={1,2,3,4,5};
         int[] dest={6,7,8,9,10};
         System.out.println("before copy "+ Arrays.toString(dest));
-        //使用system中的arraycopy把原数组的前三个元素复制到目标数组的前三个位置上
+        //使用system中的arraycopy把原数组的前三个元素复制到目标数组从index=2开始三个元素
         System.arraycopy(src,0,dest,2,3);
         System.out.println("after copy "+ Arrays.toString(dest));
     }

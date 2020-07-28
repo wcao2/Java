@@ -19,7 +19,7 @@ public class Demo07Pra {
         ArrayList<Integer> bigList=new ArrayList<>();
         Random r=new Random();
         for (int i = 0; i < 20; i++) {
-            int num=r.nextInt(100)+1;//[0,99]=>[1,100]
+            int num=r.nextInt(100)+1;//[0,100)=>[1,100]
             bigList.add(num);
         }
         ArrayList<Integer> smallList=getSmallList(bigList);

@@ -13,6 +13,12 @@ public class InterfaceTesterImpl implements InterfaceTester{
     }
 
     public static void main(String[] args) {
+        //1.1
+        InterfaceTester impl1=new InterfaceTesterImpl();
+        impl1.absMethod();
+        impl1.defMethod01();
+        impl1.defMethod();
+        System.out.println("====================");
         //2
         InterfaceTester impl=()->{//implementation absMethod()
             System.out.println("this is an implementation of absMethod method");
@@ -20,12 +26,6 @@ public class InterfaceTesterImpl implements InterfaceTester{
         impl.defMethod();
         impl.defMethod01();
         impl.absMethod();
-        System.out.println("====================");
 
-        //1.1
-        InterfaceTester impl1=new InterfaceTesterImpl();
-        impl1.absMethod();
-        impl1.defMethod01();
-        impl1.defMethod();
     }
 }

@@ -5,6 +5,7 @@ import cn.ascending.utils.Phone;
 public class Demo04 {
     public static void main(String[] args) {
         Phone b=getPhone();
+        System.out.println("the address value is: "+b);
         System.out.println(b.brand);
         System.out.println(b.color);
         System.out.println(b.price);

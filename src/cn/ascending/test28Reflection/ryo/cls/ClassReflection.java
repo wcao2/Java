@@ -3,7 +3,7 @@ package cn.ascending.test28Reflection.ryo.cls;
 import cn.ascending.test28Reflection.ryo.cls.AnnotationExample;
 
 //first time to use your own annotation @AnnotationExample
-//according to this annotation, find the class, then find the name and value their value
+//according to this annotation, find the class, then find the name and value of their value
 @AnnotationExample(name="ascending",value="ryo")
 public class ClassReflection {
 

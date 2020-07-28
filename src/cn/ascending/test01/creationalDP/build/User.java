@@ -44,7 +44,7 @@ public class User {
             return this;
         }
 
-        //由于Builder是非线程安全的，所以如果要在Builder内部类中检查一个参数的合法性，必需要在对象创建完成之后再检查
+        //由于Builder是非线程安全的，所以如果要在Builder内部类中检查一个参数的legality，必需要在对象创建完成之后再检查
         //So if you want to check the legality of a parameter, you must check it after the object is created.
         public User build() {
             //return new User(this);

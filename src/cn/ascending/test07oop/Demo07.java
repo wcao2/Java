@@ -19,6 +19,7 @@ public class Demo07 {
             this.age = age;
         }else{
             System.out.println("数据不合理");
+            //this.age=10;
         }
     }
 }
@@ -28,7 +29,7 @@ class test{
         Demo07 d7=new Demo07();
         d7.show();
         d7.name="David";
-        d7.setAge(20);
+        d7.setAge(210);
         d7.show();
     }
 }

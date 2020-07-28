@@ -21,7 +21,7 @@ public class Demo02oop {
 
 class Studnet{
     public static void main(String[] args) {
-        //1:import package(not in same package) 2:create new obj 3: use(instance variable or instance method)
+        //1:import package(if not in same package) 2:create new obj 3: use(instance variable or instance method)
         Demo02oop d=new Demo02oop();
         System.out.println(d.age+"  "+d.name);//0,null
         System.out.println("===============================");

@@ -7,7 +7,7 @@ public class MainMethod {
 
         //1
         Usb usb=new Mouse();//向上转型  左父又子就是多态  多态写法
-        c.useDevice(usb);
+        c.useDevice(usb);//click
 
         //2
         Keyboard k=new Keyboard();//没有使用多态写法

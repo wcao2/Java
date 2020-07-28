@@ -9,7 +9,7 @@ package cn.ascending.test06Array;
 */
 public class Demo12Math {
     public static void main(String[] args) {
-        System.out.println(Math.abs(-132));
+        System.out.println(Math.abs(-132));//132
         System.out.println("======================");
         System.out.println(Math.ceil(21.1));//22.0
         System.out.println("======================");

@@ -18,6 +18,7 @@ public class Demo10ConvertToStr {
 
         int[] array1={2,3,1};
         Arrays.sort(array1);
+        System.out.println(array1);//[I@60e53b93
         System.out.println(Arrays.toString(array1));//[1, 2, 3]
 
 
