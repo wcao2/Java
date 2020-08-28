@@ -10,7 +10,6 @@ import java.util.Date;
 *           Exception: 编译期异常，进行编译java程序时出现的问题(可以解决)
 *                   RuntimeException:运行期异常 java程序在运行的过程中发生的问题
 *           Error:错误(无法解决，必须修改源代码 程序才能继续执行)
-*
 * */
 public class Demo01Ex {
     public static void main(String[] args) /*throws ParseException*/ {//jvm solve the ex, stop the process, and print the ex in console

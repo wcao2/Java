@@ -14,7 +14,7 @@ public class Demo03SynMethod implements Runnable {
 
     //Set up thread tasks: sell ticketDemo02SynLock
     public void run() {
-        System.out.println("this: "+this);//同步方法的锁对象就是线程的实现类对象 this
+        System.out.println("this: "+this);//线程的实现类对象 this
         while (true){
             this.payTicket();
         }

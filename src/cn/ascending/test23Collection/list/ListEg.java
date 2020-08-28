@@ -18,7 +18,7 @@ public class ListEg {
         list.add("b");
         list.add("c");
         list.add("d");
-        System.out.println(list);//不是地址值 重写toString()方法
+        System.out.println(list);//已经不是地址值 重写toString()方法 [b, b, c, d]
         System.out.println(list.toString());//same as above
         //1:b集合中添加元素 特有方法 在指定位置添加元素
         //在cd 之间添加一个元素e

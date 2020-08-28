@@ -13,6 +13,7 @@ import java.util.Comparator;
 public class LambdaSort {
     public static void main(String[] args) {
 
+        //Person[] arr1=new Person[3]; dynamic initialization
         //static initialization
         Person[] arr={
                 new Person("A",18),

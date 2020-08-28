@@ -12,9 +12,11 @@ import cn.ascending.utils.Person;
 public class Demo01MainThread {
     public static void main(String[] args) {
         Person p1=new Person("A");
-        p1.run();
+        p1.run1();
+        //System.out.println(Thread.currentThread().getName()); main
 
         Person p2=new Person("B");
-        p2.run();
+        p2.run1();
+        //System.out.println(Thread.currentThread().getName()); main
     }
 }

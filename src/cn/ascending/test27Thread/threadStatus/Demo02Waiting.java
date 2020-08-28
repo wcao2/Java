@@ -26,7 +26,7 @@ public class Demo02Waiting {
             while(true){
                 //花五秒做包子 睡眠五秒
                 try {
-                    Thread.sleep(5000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

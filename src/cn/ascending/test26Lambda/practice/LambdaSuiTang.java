@@ -27,7 +27,7 @@ public class LambdaSuiTang {
         MyString classString=new LambdaSuiTang.MyStringImpl();
         System.out.println(classString.myStringFunction("Wei Cao"));
 
-        //2  create anonymous inner classes.
+        //2  create anonymous inner classes.  anonymous class
         MyString classString2=new MyString(){//new interface必须有具体的implementation
             @Override
             //anonymous class implementation
@@ -57,7 +57,7 @@ public class LambdaSuiTang {
         });
         System.out.println("======================================================");
         //https://blog.csdn.net/eff666/article/details/63692840
-        Comparator<Student> ageComparator=(s1,s2)->(int) (s1.getAge()-s2.getAge());
+        Comparator<Student> ageComparator=(s1,s2)->(int) (s1.getAge()-s2.getAge());//升序
         Student[] stuArr=new Student[2];
         stuArr[0]=new Student("A",12);
         stuArr[1]=new Student("B",1);

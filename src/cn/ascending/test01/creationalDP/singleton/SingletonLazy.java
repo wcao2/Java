@@ -6,7 +6,7 @@ package cn.ascending.test01.creationalDP.singleton;
 //当instance本身创建起来就很快
 public class SingletonLazy {
     //lazy load
-    private static SingletonLazy single_ins = null;
+    private static SingletonLazy single_ins/*=null*/;
     public String s;
 
     //create constructor must be private

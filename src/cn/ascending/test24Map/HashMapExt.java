@@ -10,11 +10,11 @@ public class HashMapExt {
         this.key = key;
     }
 
-    //因为key是HashMapExt对象 所以需要写规则判断是否相同
+    //因为key是HashMapExt对象的属性 所以需要写规则判断是否相同
     @Override
     public boolean equals(Object t){
         return key == ((HashMapExt)t).key ;
-    }
+    }//down casting
 
     @Override
     public int hashCode(){

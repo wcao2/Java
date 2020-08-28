@@ -15,5 +15,9 @@ public class Demo02Lamda {
         new Thread(()->{
             System.out.println(Thread.currentThread().getName()+" lambda expression的线程创建了");
         }).start();
+
+        System.out.println(
+                Thread.currentThread().getName()
+        );
     }
 }

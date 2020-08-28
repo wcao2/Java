@@ -20,7 +20,7 @@ public class Coll02Comparable {
         System.out.println("before sort list03 is "+list03);
         System.out.println("after sort list03 is " );
         Collections.sort(list03);//升序
-        System.out.println("Ascending "+list03);
+        System.out.println(list03);//升序
         System.out.println("---------------");
         //自己定义比较器 降序 实现Comparator接口
         Collections.sort(list03, new Comparator<Person>() {
@@ -30,7 +30,7 @@ public class Coll02Comparable {
             }
         });
 
-        System.out.println("Desscending "+list03);
+        System.out.println(list03);//降序
         //whatever Integer or String, they are all implements comparable interface then override compareTo function
     }
 }

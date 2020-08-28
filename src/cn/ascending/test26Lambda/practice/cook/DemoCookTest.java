@@ -22,6 +22,7 @@ public class DemoCookTest {
                  System.out.println("food is so declcious");
              }
          };
+         dc.makeFood();
     }
 
     //定义个方法 参数传递cook接口 方法内部调用Cook接口中的makeFood()

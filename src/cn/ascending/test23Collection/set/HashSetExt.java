@@ -9,7 +9,7 @@ public class HashSetExt extends Object{
         this.val = val;
     }
 
-    //最好重写equals 因为即使new两个HashSetExt, 构造方法有着相同的parameter， 若不重写，默认会认为是两个不一样对象 比较的是地址值
+    //最好重写equals 因为即使new两个HashSetExt, 构造方法有着相同的parameter， 若不重写，默认会认为是两个不一样对象(我们想认为是一样的) 比较的是地址值
     // default   public boolean equals(Object var1) { return this == var1;}
     @Override
     public boolean equals(Object t){

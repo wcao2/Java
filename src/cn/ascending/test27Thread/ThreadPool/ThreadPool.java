@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 public class ThreadPool {
     public static void main(String[] args) {
         //1使用线程池工厂类Executors提供的静态方法newFixedThreadPool产生一个指定线程数量的线程池
-        ExecutorService es = Executors.newFixedThreadPool(2);//返回线程池实现类 用接口来接收
+        ExecutorService es = Executors.newFixedThreadPool(3);//返回线程池实现类 用接口来接收
         //3调用submit方法 传递线程任务(实现类) 开启线程 执行run方法
         es.submit(new RunnableImpl());
         es.submit(new RunnableImpl());

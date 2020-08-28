@@ -33,6 +33,8 @@ public class Demo02HashCode {
         String str2=new String("abc");
         set.add(str1);
         set.add(str2);
+        System.out.println(str1.hashCode()==str2.hashCode());//true
+        System.out.println(str1.equals(str2));//true
         for(String i:set){
             System.out.println(i);//abc
         }

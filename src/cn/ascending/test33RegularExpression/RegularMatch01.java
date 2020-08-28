@@ -40,7 +40,7 @@ public class RegularMatch01 {
 
     public static boolean simpleDemo(String line){
         //大小写字母或者空格出现 many times, then the number shows zero or many times final any character show zero or many times
-        String pattern="([a-zA-Z ]*)(\\d+)(.*)";
+        String pattern="([a-zA-Z ]*)(\\d+)(.*)";//This order was placed for QT3000! OK?
         //create pattern object
         Pattern r=Pattern.compile(pattern);
         //create macher object

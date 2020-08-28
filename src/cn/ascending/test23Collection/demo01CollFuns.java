@@ -41,7 +41,7 @@ public class demo01CollFuns {
         int size=coll.size();
         System.out.println("size: "+size);
 
-        //6: public Object[] toArray(): 把集合中的元素 存储的数组中
+        //6: public Object[] toArray(): 把集合中的元素 存储的数组中  集合-->数组
         Object[] arr = coll.toArray();
         for (int i = 0; i <arr.length ; i++) {
             System.out.println("the elements in array "+arr[i]);

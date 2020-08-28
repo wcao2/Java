@@ -33,7 +33,7 @@ public class Demo02SynLock implements Runnable{
                     ticket--;
                 }
             }
-            //finish sync code block,return the lock object
+            //finish sync code block,release the lock object
         }
     }
 

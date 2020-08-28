@@ -11,6 +11,8 @@ public class Demo01Thread {
 
         //4 调用Thread类中的start方法 开启新线程 执行run方法 不用mt.run() 因为他在主线程里面       System.out.println(0/0);
         mt.start();//开辟新空间 执行run方法
+        //start方法启动线程来调用run方法中新建线程要执行的操作
+        //使该线程开始执行;Java虚拟机调用这个线程的run方法。
 
         //主线程
         for (int i = 0; i <20 ; i++) {

@@ -14,6 +14,8 @@ public class Demo01Sleep {
             }catch (Exception e){
                 e.printStackTrace();
             }
+            System.out.println(Thread.currentThread().getName());
         }
+
     }
 }

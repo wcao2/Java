@@ -31,7 +31,7 @@ public class DemoString {
         str.forEach(System.out::print);//2,4,6
         //str.forEach(s-> System.out.println(s));
 
-        System.out.println("======================================================");
+
         final int[] factor1=new int[]{2};//dynamic initialized
         Stream<Integer> str1=anotherNums.stream().map(e->e*factor1[0]);
         factor1[0]=0;

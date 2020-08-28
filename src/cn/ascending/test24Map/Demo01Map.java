@@ -30,7 +30,7 @@ public class Demo01Map {
         map.put("B","b");
         map.put("C","b");
         map.put("A","d");
-        System.out.println(map);// {A=a, B=b, C=b}
+        System.out.println(map);// {A=d, B=b, C=b}
         //2:remove method 把指定键值对在Map集合中删除 返回被删除元素的值. k不存在 返回null
         Map<String,Integer> map1=new HashMap<>();
         map1.put("cw",183);

@@ -12,7 +12,7 @@ public class MyThread extends Thread{
     public void run(){
         //set the thread tasks, and get thread name
         String name=getName();//因为mythread继承Thread,所以可以直接使用方法getName()
-        System.out.println("name is"+name);
+        System.out.println("name is "+name);
         //get current Thread
 
         Thread t=Thread.currentThread();
@@ -34,8 +34,8 @@ public class MyThread extends Thread{
         mt.start();//in order to multiple thread, so I do not use mt.run()
         new MyThread().start();
         //get main Thread
-        System.out.println("Current Thread is "+Thread.currentThread());
-        System.out.println("Current Thread is "+Thread.currentThread().getName());
+        System.out.println("Current1 Thread is "+Thread.currentThread());
+        System.out.println("Current2 Thread is "+Thread.currentThread().getName());
     }
 }
 //print three thread name

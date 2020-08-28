@@ -16,6 +16,7 @@ public class Demo02Traverse {
         map.put("A","Jonny");
         map.put("B","Danny");
         map.put("C","Peter");
+        //map.put("","Peter");
         //1: 使用map集合中的ketset()方法， 把map集合中所有的key取出 存储到set集合中
         Set<String> set=map.keySet();
         //2: 遍历set集合 获取Map集合中的每一个key
@@ -31,5 +32,8 @@ public class Demo02Traverse {
             String value=map.get(key);
             System.out.println(key+"------>"+value);
         }
+
+        System.out.println("".toString()); //allocate a memory
+        //System.out.println(null.toString); error
     }
 }

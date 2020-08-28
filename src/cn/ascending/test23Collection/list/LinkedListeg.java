@@ -23,6 +23,7 @@ public class LinkedListeg {
         System.out.println(linked);
         //1: public void addFirst(E e)往集合开头添加元素   === public void push(E e)
         linked.addFirst("www");
+        linked.push("www");
         System.out.println(linked);
         //2: public void addLast(E e)往集合末尾添加元素
         linked.addLast("com");

@@ -23,7 +23,8 @@ public class Demo04Lock implements Runnable {
             if(ticket>0){
                 try {
                     //提高线程安全问题的几率 执行到if语句 失去cpu的执行权
-                    Thread.sleep(10);System.out.println(Thread.currentThread().getName()+"---->"+" is selling the number of "+ticket);
+                    Thread.sleep(10);
+                    System.out.println(Thread.currentThread().getName()+"---->"+" is selling the number of "+ticket);
                     ticket--;
                 } catch (InterruptedException e) {
                     e.printStackTrace();

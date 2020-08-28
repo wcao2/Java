@@ -27,7 +27,7 @@ class main{
     public static void main(String[] args) {
         demo07GenericInterface impl1=new demo07GenericInterfaceImpl1();
         impl1.method("abs");
-        impl1.method(true);
+        impl1.method(true);//ClassCastException
         System.out.println("------------------");
         demo07GenericInterface<Double> impl2=new demo07GenericInterfaceImpl2();
         impl2.method(1.00);

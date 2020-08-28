@@ -87,7 +87,7 @@ public class Person implements Comparable<Person>, Serializable {//This class im
         this.age = age;
     }
 
-    public void run(){
+    public void run1(){
         //define loop 20
         for (int i = 0; i <20 ; i++) {
             System.out.println(name+"--->"+i);

@@ -1,5 +1,6 @@
 package cn.ascending.test27Thread.threadSecurity;
 
+//in here is a big problem
 public class Demo01Ticket implements Runnable{
     public int ticket=20;
 
@@ -22,7 +23,7 @@ public class Demo01Ticket implements Runnable{
 
     //create three threads, to sell the ticket
     public static void main(String[] args) {
-        //创建runnable接口的实现类对象 为了共享票源 创建一个!!!!!实现类对象==> Create an interface implementation object
+        //创建runnable接口的实现类对象 为了共享票源 创建一个!!!!!实现类对象==> Create an interface's implementation object
         Runnable run=new Demo01Ticket();
         //创建Thread类对象 构造方法中传递Runnable接口的实现类对象
         Thread t=new Thread(run);
