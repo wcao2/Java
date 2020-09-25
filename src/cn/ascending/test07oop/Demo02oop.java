@@ -3,7 +3,7 @@ package cn.ascending.test07oop;
 public class Demo02oop {
     //面向对象三大特征：封装(Encapsulation) 继承(inherit) 多态（Polymorphism）
     //类是对一类事物的描述，是抽象的(class is a desc of things and it is abstract)
-    //对象是一类事物的实例，是具体的(objs are instances of a class, it is concrete)
+    //对象是一类事物的实例，是具体的(objs are instances of a ccontiguouslass, it is concrete)
     //类是对象的模板，对象是类的实体(classes are templates of objs, and objs are entities of classes)
 
     //define a class, used to simulate student

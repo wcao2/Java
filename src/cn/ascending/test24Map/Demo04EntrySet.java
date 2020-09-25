@@ -19,7 +19,7 @@ public class Demo04EntrySet {
     private static void show02() {
         //key is person type
         //in Treemap, 若Person作为key,则必须指定comparator
-        HashMap<Person,String> map=new HashMap<Person,String>();
+        HashMap<Person,String> map=new HashMap<>();
         map.put(new Person("Jonny",18),"BJ");
         map.put(new Person("Peter",28),"DC");
         map.put(new Person("ZhaoSi",38),"LA");

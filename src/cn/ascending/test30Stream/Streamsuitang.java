@@ -22,7 +22,8 @@ public class Streamsuitang {
         //1:
         List<Integer> result=new ArrayList<>();
         twoD.forEach(//forEach()不用stream()
-                l->{List<Integer> temp=l.stream().filter(e->e>5).collect(Collectors.toList());
+                l->{
+                    List<Integer> temp = l.stream().filter(e -> e > 5).collect(Collectors.toList());
                     result.addAll(temp);
                 }
         );
@@ -40,7 +41,9 @@ public class Streamsuitang {
         //====================================
         //通过lambda expression 把 Map<String, Employee> 变成 List<Employee>
         Map<String, Student> mapStudent=new HashMap<>();
-        List<Student> result3=mapStudent.values().stream().collect(Collectors.toList());
+        List<String> result3=mapStudent.keySet().stream().collect(Collectors.toList());
+        List<Student> result4=mapStudent.values().stream().collect(Collectors.toList());
+        System.out.println(result3);// []
         //通过lambda expression 把 List<Employee> 变成 Map<String, Employee>
         List<Student> list=new ArrayList<>();
         list.add(new Student("A",12));

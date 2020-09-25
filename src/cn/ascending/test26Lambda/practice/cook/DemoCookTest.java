@@ -3,7 +3,7 @@ package cn.ascending.test26Lambda.practice.cook;
 public class DemoCookTest {
 
     public static void main(String[] args) {
-        //调用invokeCook方法 传递cook接口的匿名内部类对象
+        //1:调用invokeCook方法 传递cook接口的匿名内部类对象
         invokeCook(new DemoCook() {
             @Override
             public void makeFood() {
@@ -11,15 +11,16 @@ public class DemoCookTest {
             }
         });
 
-        //使用lambda expression 简化匿名内部类书写
+        //2:使用lambda expression 简化匿名内部类书写
          invokeCook(()->{
              System.out.println("lambda 恰饭了");
          });
 
+         //3
          DemoCook dc=new DemoCook() {
              @Override
              public void makeFood() {
-                 System.out.println("food is so declcious");
+                 System.out.println("food is so declious");
              }
          };
          dc.makeFood();

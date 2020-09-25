@@ -34,3 +34,15 @@ public class Coll02Comparable {
         //whatever Integer or String, they are all implements comparable interface then override compareTo function
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

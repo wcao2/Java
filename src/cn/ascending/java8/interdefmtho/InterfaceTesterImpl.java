@@ -2,7 +2,7 @@ package cn.ascending.java8.interdefmtho;
 
 //1
 public class InterfaceTesterImpl implements InterfaceTester{
-    @Override
+    @Override  //override default
     public void defMethod01() {
         System.out.println("override default method 01, still use default method");
     }
@@ -18,6 +18,7 @@ public class InterfaceTesterImpl implements InterfaceTester{
         impl1.absMethod();
         impl1.defMethod01();
         impl1.defMethod();
+        InterfaceTester.methodStatic();
         System.out.println("====================");
         //2
         InterfaceTester impl=()->{//implementation absMethod()

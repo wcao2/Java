@@ -12,7 +12,7 @@ import java.util.List;
 public class ListEg {
     public static void main(String[] args) {
         //创建一个list集合对象
-        List<String> list=new ArrayList<>(2);
+        List<String> list=new ArrayList<>();
         //1:a集合中添加元素
         list.add("b");
         list.add("b");

@@ -11,6 +11,10 @@ public class LambdaTry {
     //define a functional Interface
     @FunctionalInterface
     /*public abstract*/ interface MyFunctionInterface{
+        public default void defMethod01(){
+            System.out.println("this is a interface default method01");
+        }
+
         /*public abstract */String myFunction(String str);
     }
 

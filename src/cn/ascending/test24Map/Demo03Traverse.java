@@ -16,9 +16,13 @@ public class Demo03Traverse {
         map.put("A","Jonny");
         map.put("B","Danny");
         map.put("C","Peter");
-        map.put(null,"Peter");
+        map.put(null,null);
 
         Set<Map.Entry<String, String>> set = map.entrySet();
+        for(Map.Entry<String, String> entry:set){
+            System.out.println(entry.getKey()+"<--->"+entry.getValue());
+        }
+        System.out.println("-------------------------------------");
         //遍历
         Iterator<Map.Entry<String, String>> it = set.iterator();
         while(it.hasNext()){

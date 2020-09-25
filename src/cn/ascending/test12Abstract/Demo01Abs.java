@@ -9,7 +9,7 @@ public abstract class Demo01Abs {
     public abstract void eat();
 
 
-    //this is normal member method
+    //this is normal instance method
     public void method(){
 
     }

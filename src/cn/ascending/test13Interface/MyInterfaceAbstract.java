@@ -3,7 +3,7 @@ package cn.ascending.test13Interface;
 
 /*
 *  1:接口用来定义抽象方法
-* 　public abstract 返回值类型　方法名称(参数列表);  接口中的抽象方法　修饰符必须是两个固定的关键字　public abstract, 但可以省略(1,1,2)
+* 　public abstract 返回值类型　方法名称(参数列表);  接口中的抽象方法　修饰符必须是两个固定的关键字　public abstract,可以省略
 *
 * 　接口使用三部曲
 *  １:接口不能直接使用　必须有一个实现类implementation class来实现该接口　public class 实现类名称　implements 接口名称 { }

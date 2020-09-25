@@ -24,7 +24,7 @@ public class Demo05StrConvert {
         String str1="How do you do?";
         String str2=str1.replace("o","*");
         System.out.println(str1);
-        System.out.println(str2);
+        System.out.println(str2);//H*w d* y*u d*?
     }
 
 }

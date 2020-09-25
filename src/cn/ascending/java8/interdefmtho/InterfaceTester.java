@@ -18,5 +18,5 @@ public interface InterfaceTester {
 
     //FunctionalInterface can only have one method, so default method was introduced in java8
     //abstract method
-    void absMethod();
+    /*public abstract*/ void absMethod();
 }

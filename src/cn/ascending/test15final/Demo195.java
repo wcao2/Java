@@ -2,13 +2,12 @@ package cn.ascending.test15final;
 
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
-// 1:final keyword used to desc the class: public final class 类名称{}
+// 1:final keyword used to desc the class: public final class 类名称{} 当前类不能有任何子类 可以有父亲类
 // 2:final关键字用来修饰方法 : 修饰符 final 返回值类型 方法名称(参数列表){方法体}
      //对于类和方法来说 abstract和final不能一起出现
 // 3:用来修饰一个局部变量 这个变量就不能再修改 (只要保证唯一一次赋值)
     //对于基本类型来说 不可变说的是变量中的数值 对引用类型来说 不可变指的是变量中的地址值不可以改变
 // 4:修饰成员变量
-// 当前类不能有任何子类 可以有父亲类
 public class Demo195 {
 
     public void method(){

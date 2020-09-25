@@ -8,6 +8,8 @@ public class Demo01StrPool {
         String str1="abc";
         String str2="abc";
 
+        String str5=new String("abc");
+
         char[] charArray={'a','b','c'};
         String str3=new String(charArray);
 
@@ -21,5 +23,6 @@ public class Demo01StrPool {
         System.out.println(str2==str3);//false
         System.out.println(str4==str3);//false
         System.out.println(str4==str1);//false
+        System.out.println(str5==str1);//false
     }
 }

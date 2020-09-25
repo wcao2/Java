@@ -4,9 +4,9 @@ public class Demo02Practice {
     public static void main(String[] args) {
         byte a=10;
         byte b=12;
-        System.out.println(isSame(a,b));
-        System.out.println(isSame((short)10,(short)20));
-        System.out.println(isSame(10L,10L));
+        System.out.println(isSame(a,b));//false
+        System.out.println(isSame((short)10,(short)20));//false
+        System.out.println(isSame(10L,10L));//true
     }
 
     public static boolean isSame(byte a,byte b){

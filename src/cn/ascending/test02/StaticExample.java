@@ -5,7 +5,7 @@ public class StaticExample {
     public static void main(String[] args) {
         Student st1=new Student("郭靖",19);
         Student st2=new Student("黄蓉",18);
-        st1.room="101classroom";
+        Student.room="101classroom";
         System.out.println("name "+st1.getName()+" age: "+st1.getAge()+" "+st1.room+" ,sNo is "+st1.getId());
         System.out.println("name "+st2.getName()+" age: "+st2.getAge()+" "+st2.room+" ,sNo is "+st2.getId());
     }
@@ -32,23 +32,23 @@ class Student{
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
 }

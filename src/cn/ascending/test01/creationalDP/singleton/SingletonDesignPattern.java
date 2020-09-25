@@ -12,7 +12,7 @@ public class  SingletonDesignPattern {
         // it creates an object of the class with name single_instance and return it to the variable(a,b)
         SingletonLazy a = SingletonLazy.getInstance();
         System.out.println(a);
-        //variables b is pointed to object a
+        //variables b is pointed to what object a is pointed
         SingletonLazy b = SingletonLazy.getInstance();
         System.out.println(b);
         //change variable of instance of a, that is reflected when we access the variables of objects b

@@ -13,7 +13,7 @@ import java.util.Comparator;
 * */
 
 /*
-    在用Collections类的sort方法排序时若不指定Comparator，那就以自然顺序排序(Natural ordering)。所谓自然顺序就是实现Comparable接口设定的排序方式。
+    在用Collections类的sort方法排序时若不指定Comparator，那就以自然顺序排序(Natural sorting)。所谓自然顺序就是实现Comparable接口设定的排序方式。
     若一个类实现了comparable接口，则意味着该类支持排序。如String、Integer自己就实现了Comparable接口，可完成比较大小操作。
     一个已经实现comparable的类的对象或数据，可以通过Collections.sort(list) 或者Arrays.sort(arr)实现排序。
     通过Collections.sort(list,Collections.reverseOrder());对list进行倒序排列。

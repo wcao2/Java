@@ -36,10 +36,10 @@ public class Demo01Map {
         map1.put("cw",183);
         Integer v1=map1.remove("cw");//多使用包装类 少用基本类型 因为可能返回null, 会有nullpointerexception
         System.out.println("v1: "+v1);
-        System.out.println(map1);// { }
+        System.out.println("map1--> "+map1);// { }
         //3:通过key获取value 没有返回null
         String value=map.get("A");
-        System.out.println(value);
+        System.out.println("value-->"+value);
         //4:是否包含key
         boolean bool = map.containsKey("A");
         System.out.println("bool: "+bool);

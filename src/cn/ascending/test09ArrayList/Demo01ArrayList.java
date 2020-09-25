@@ -10,7 +10,7 @@ public class Demo01ArrayList {
     public static void main(String[] args) {
         //diamond bracket 代表泛型,装在集合中的所有元素,全部统一是什么类型
         //泛型只能是引用类型 不能是基本类型
-        //从JDK1.7开始，右侧的 angel brackets可以不写内容 但angle brackets仍需在那儿
+        //从JDK1.7开始，右侧的 angle brackets可以不写内容 但angle brackets仍需在那儿
         ArrayList<String> list=new ArrayList<>();
         //对于ArrayList来说,直接打印得到的不是地址值，而是内容，如果内容是空，得到的是[]
         System.out.println(list);

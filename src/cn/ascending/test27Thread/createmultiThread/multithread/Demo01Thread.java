@@ -1,7 +1,7 @@
 package cn.ascending.test27Thread.createmultiThread.multithread;
 
 /*
-*  create multi thread method1: create Thread son class
+*  create multi thread method1: create Thread subclass
 * */
 public class Demo01Thread {
     //一个main线程 一个新线程 一起抢夺cpu执行权

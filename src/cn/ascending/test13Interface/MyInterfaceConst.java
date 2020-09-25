@@ -7,7 +7,7 @@ package cn.ascending.test13Interface;
 //接口中的常量　可以省略public static final　但是不写　也照样是这么三个
 //接口中的常量　必须进行赋值
 public interface MyInterfaceConst {
-    public static final int NUMBER=10;
+    /*public static final*/ int NUMBER=10;
 
     String str="asd";
 

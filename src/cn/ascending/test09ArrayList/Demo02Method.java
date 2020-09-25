@@ -13,11 +13,12 @@ public class Demo02Method {
     *  4: public int size() 获取集合尺寸长度，返回值是集合中包含的元素个数
     */
     public static void main(String[] args) {
+        System.out.println(5/2);
         ArrayList<String> list=new ArrayList<>();
         System.out.println(list);//[]
 
         boolean success=list.add("Jason");
-        System.out.println(list);//Jason
+        System.out.println(list);//[Jason]
         System.out.println("添加动作是否成功: "+success);
 
         list.add("Jenny");
@@ -25,7 +26,7 @@ public class Demo02Method {
         list.add("Trump");
         //获取集合元素
         String name=list.get(2);
-        System.out.println("the second index is "+name);
+        System.out.println("the third element is "+name);
         //从集合中删除元素
         String remove = list.remove(3);
         System.out.println("the person deleted is "+remove);
@@ -48,5 +49,6 @@ public class Demo02Method {
         }
         System.out.println("================");
         list.forEach(ele-> System.out.println(ele));
+
     }
 }

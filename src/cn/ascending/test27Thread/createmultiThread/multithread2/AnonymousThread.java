@@ -13,16 +13,6 @@ package cn.ascending.test27Thread.createmultiThread.multithread2;
 * */
 public class AnonymousThread {
     public static void main(String[] args) {
-        //继承类的方式
-        new Thread(){//16~23只是创建子类对象 还需要调用start方法开启
-            @Override
-            public void run(){
-                for (int i = 0; i <20 ; i++) {
-                    System.out.println(Thread.currentThread().getName()+"==>"+"good");
-                }
-            }
-        }.start();
-        //===========================================
         //实现接口的方式
         Runnable r=new Runnable() {
             @Override
@@ -43,6 +33,17 @@ public class AnonymousThread {
                 }
             }
         }).start();
+        //===========================================
+        //继承类的方式
+        new Thread(){//16~23只是创建子类对象 还需要调用start方法开启
+            @Override
+            public void run(){
+                for (int i = 0; i <20 ; i++) {
+                    System.out.println(Thread.currentThread().getName()+"==>"+"good");
+                }
+            }
+        }.start();
+
         // main thread
         for (int i = 0; i < 20; i++) {
             System.out.println(Thread.currentThread().getName()+"====>"+i);

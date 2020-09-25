@@ -11,6 +11,6 @@ public class TS02 {
         tree_set.add("K");
         tree_set.add("S");
         tree_set.add("4");
-        System.out.println("The elements sorted in descending by using comparator "+tree_set);
+        System.out.println("The elements sorted in descending by using comparator "+tree_set);//[S, K, G, E, 4]
     }
 }

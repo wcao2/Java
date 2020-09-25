@@ -22,7 +22,7 @@ public class TM01 {
 
         Set<Map.Entry<Employee,String>> set=empTreeMap.entrySet();
         for(Map.Entry<Employee,String> entry:set){
-            System.out.println(entry.getKey()+" : "+entry.getValue());
+            System.out.println(entry.getKey()+" <--> "+entry.getValue());
         }
        // System.out.println(empTreeMap);
     }

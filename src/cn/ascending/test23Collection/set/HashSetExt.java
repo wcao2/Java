@@ -4,12 +4,11 @@ import java.util.HashSet;
 //write an Object with hashcode() and equals(), then add them into HashSet
 public class HashSetExt extends Object{
     int val;
-
     public HashSetExt(int val) {
         this.val = val;
     }
 
-    //最好重写equals 因为即使new两个HashSetExt, 构造方法有着相同的parameter， 若不重写，默认会认为是两个不一样对象(我们想认为是一样的) 比较的是地址值
+    //最好重写equals 因为即使new两个HashSetExt, 构造方法有着相同的parameter， 若不重写，默认会认为是两个不一样对象 比较的是地址值(我们想认为是一样的)
     // default   public boolean equals(Object var1) { return this == var1;}
     @Override
     public boolean equals(Object t){
@@ -35,8 +34,8 @@ public class HashSetExt extends Object{
         System.out.println("t2: "+t2);
 
         HashSet<HashSetExt> hs=new HashSet<>();
-        System.out.println("t1's hashcode"+t1.hashCode());
-        System.out.println("t2's hashcode"+t2.hashCode());
+        System.out.println("t1's hashcode ==> "+t1.hashCode());
+        System.out.println("t2's hashcode ==> "+t2.hashCode());
         System.out.println(t1.equals(t2));
         hs.add(t1);
         hs.add(t2);

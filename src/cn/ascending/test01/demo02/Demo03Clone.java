@@ -13,7 +13,7 @@ public class Demo03Clone {
         Student s3 = s1.clone();
 
         System.out.println(s1+" "+s1.hashCode());
-        System.out.println(s2+" "+s2.hashCode());
+        System.out.println(s2+" "+s2.hashCode());//s1.hashCode()=s2.hashCode();
         System.out.println(s3+" "+s3.hashCode());
         System.out.println(s1+" "+s1.toString());
         System.out.println(s2+" "+s2.toString());

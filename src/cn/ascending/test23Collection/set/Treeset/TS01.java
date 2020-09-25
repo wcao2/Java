@@ -11,7 +11,7 @@ public class TS01 {
         tree_set.add("K");
         tree_set.add("S");
         tree_set.add("4");
-        System.out.println("Set before using the comparator: "+tree_set);
+        System.out.println("Set before using the comparator: "+tree_set);//[4, E, G, K, S]
     }
 
 }

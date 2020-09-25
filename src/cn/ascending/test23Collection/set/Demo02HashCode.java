@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 /*
 *  hashvalue: 是一个十进制的整数 由系统随机给出 就是对象的一个地址值 是一个逻辑地址 是模拟出来的地址 不是数据实际存储的物理地址值
-*   It is a decimal integer randomly given by the system, it is an address value of the object which is a logical address
+*   It is a integer randomly given by the system, it is an address value of the object which is a logical address
 *   and it is the simulated address and it is not the physical address value of the actual data storage
 *
 * */

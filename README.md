@@ -165,6 +165,8 @@ It contains almsot all the basic knowledge of Java
     * List Set HashSet TreeSet Hashcode
     * java.utils.collection接口,所有集合最顶层接口 定义所有集合共性方法
     * variable parameters(可变参数) 
+    * iterator and for loop in Collection
+     
 * =======================================
 * test24: Map
     *  TreeMap

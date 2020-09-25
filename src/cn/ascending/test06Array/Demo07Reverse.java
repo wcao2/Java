@@ -10,7 +10,7 @@ public class Demo07Reverse {
             System.out.println(array[i]);
         }
         System.out.println("============");
-
+        //reverse array
         for(int min=0,max=array.length-1; min<max; min++,max--){
             int temp=array[min];
             array[min]=array[max];
