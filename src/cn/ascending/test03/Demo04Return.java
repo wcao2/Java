@@ -18,4 +18,10 @@ public class Demo04Return {
         int result=a+b;
         System.out.println("without return value "+result);
     }
+    // break, return, continue区别
+    //https://blog.csdn.net/adminabcd/article/details/46793209
+    //return 的作用是退出循环体所在的函数，相当于结束该方法。
+    //break 的作用是结束循环，跳出循环体，执行后面的程序。
+    //continue 的作用是结束此次循环，进行下一次循环；
+
 }

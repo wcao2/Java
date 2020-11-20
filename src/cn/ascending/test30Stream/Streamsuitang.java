@@ -32,7 +32,7 @@ public class Streamsuitang {
         }
         //2(升级版): flatmap: 把几个小的list转换到一个大的list   [[3,4],[5,6]]==>[3,4,5,6]  convert the two dimension matrix to a list
         List<Integer> result1= twoD.stream().flatMap(l->l.stream()).filter(e->e>5).collect(Collectors.toList());
-        System.out.println("result1 "+result1);
+        System.out.println("result1------------------- "+result1);
 
         //每个对象＋1
         List<Integer> result2=twoD.stream().flatMap(l->l.stream()).map(e->e+1).collect(Collectors.toList());
